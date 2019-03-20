@@ -1,0 +1,35 @@
+{
+  "faculty": "The heat power engineering department",
+  "landing": {
+    "title1": "Determine where to study?",
+    "title2": "What we offer:",
+    "section2": {
+      "title": "High quality learning",
+      "item": "Something else"
+    },
+    "title3": "Our Departments",
+    "title4": "Have questions left?",
+    "text": "Can not decide which specialty you choose, or which department to choose?\nCall us / contact us at:",
+    "departments": {
+      "apeps": "АПЕПС",
+      "atep": "АТЕП",
+      "teut": "ТЕУТ i АЕС",
+      "tpt": "ТПТ",
+      "itf": "АЕС та ІТФ",
+      "more": "Learn more"
+    }
+  },
+  "menu": {
+    "news": "News",
+    "entry": "Entry",
+    "schedule": "Schedule",
+    "science": "Science",
+    "conferences": "Conferences",
+    "info": "Information package",
+    "common-inf": "Common information",
+    "entrant": "Entrant",
+    "student": "Student",
+    "contacts": "Contacts"
+  }
+}
+

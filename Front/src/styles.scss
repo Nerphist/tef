@@ -1,0 +1,16 @@
+@import "~src/shared/variables";
+@import "~src/shared/functions";
+
+* {
+  color: $basic-black;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: rem-calc(60px);
+}
+
+@import "shared/modals/department";

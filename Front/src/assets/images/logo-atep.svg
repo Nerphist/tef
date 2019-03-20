@@ -1,0 +1,15 @@
+<svg id="logo-atep" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
+    <g fill="none" stroke-width="3">
+        <g stroke-linecap="round">
+            <path d="M106.025 50H92.997M103 66.04V50h-7v16.04M43.792 50H30.764M37.618 51.163c-.072 9.063-.11 13.948-.117 14.654"/>
+            <path stroke-linejoin="round" d="M14.998 65.668l6.545-15.617 6.333 15.617zM15.485 36V26h84.03v10L102 31h-5l2.516 5M100 90H76.5V80l2.5 4.933h-5L76.5 80v10H100V78.001zM66.737 78.17v11.762H15.55v-10l2.45 5h-5l2.55-5"/>
+            <path d="M77.767 50H65.754c-.942 0-.942 0-.316.621l6.814 6.771c.57.566.57.566.023 1.116l-6.836 6.869c-.627.63-.627.63.288.63h12.04"/>
+        </g>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 43v30h5v5h13v-5h33V43H22v-5H9v5z"/>
+        <path d="M9 73h13M9 43h13"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M60 73V43h23v30h-4v5h-5v-5h-5v5h-5v-5z"/>
+        <path d="M64 73h15"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M88 43v30h5v5h14v-5h4V43h-5v-5H93v5z"/>
+        <path d="M93 43h13M93 73h14"/>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg id="logo-apeps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110">
+    <g fill="none" fill-rule="evenodd">
+        <path fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M44.4 64V34.905c0-2.066-.228-4.12-.677-6.124A29.585 29.585 0 0 1 50.5 28C66.792 28 80 41.208 80 57.5S66.792 87 50.5 87c-2.091 0-4.132-.218-6.1-.631v-6.17c3.197 0 6.39-.198 9.563-.595L54 79.6v-6L44.4 64zM31.628 80.174c.657.016 1.314.025 1.972.025v1.482a29.62 29.62 0 0 1-1.972-1.507zm-6.533-7.67A29.363 29.363 0 0 1 21 57.5c0-10.026 5.002-18.885 12.647-24.215a28.05 28.05 0 0 0-.047 1.621v29.093l-8.505 8.505z"/>
+        <path fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M44.4 80.2v6.6L42.126 91v1.2l.569 1.8H35.305l.569-1.8V91L33.6 86.8v-6.6c-3.197 0-6.39-.2-9.563-.596L24 79.6v-6l9.6-9.6V34.905c0-4.153.922-8.254 2.7-12.007l1.796-3.793a1 1 0 0 1 1.808 0L41.7 22.9a28.05 28.05 0 0 1 2.7 12.007v29.093l9.6 9.6v6l-.037.005a77.097 77.097 0 0 1-9.563.596z"/>
+        <path fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M50.5 23C69.554 23 85 38.446 85 57.5 85 76.554 69.554 92 50.5 92"/>
+        <path fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M50.5 18C72.315 18 90 35.685 90 57.5V94"/>
+    </g>
+</svg>

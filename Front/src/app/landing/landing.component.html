@@ -1,0 +1,143 @@
+<section class="section section__news d-flex">
+  <img class="news__image" src="/assets/images/news.png" alt="news">
+  <div class="news">
+    <h4 class="news__title">Остання новина</h4>
+    Вітаємо студентство
+    з початком другого семестру
+  </div>
+</section>
+
+<!--<div class="test">-->
+  <!--<perfect-scrollbar>-->
+    <!--<div class="test1"></div>-->
+    <!--<div class="test2"></div>-->
+  <!--</perfect-scrollbar>-->
+<!--</div>-->
+
+<section class="section section_cobalt">
+  <h2 class="section__title">{{'landing.title1' | translate}}</h2>
+  <p class="section__content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et augue sed quam luctus molestie. Sed convallis
+    feugiat lacus, non egestas elit pulvinar vitae. Sed nec congue enim, a posuere tortor.
+  </p>
+</section>
+
+<section class="section section_red">
+  <h2 class="section__title">Що ми {{'landing.title2' | translate}}</h2>
+  <div class="section__content d-flex flex-grow-1 align-items-center">
+    <img class="image-small" src="/assets/images/head.png" alt="news">
+    {{'landing.section2.title' | translate}}
+  </div>
+  <ul class="list">
+    <li class="list__item d-flex align-items-center">{{'landing.section2.item' | translate}}</li>
+    <li class="list__item d-flex align-items-center">{{'landing.section2.item' | translate}}</li>
+    <li class="list__item d-flex align-items-center">{{'landing.section2.item' | translate}}</li>
+    <li class="list__item d-flex align-items-center">{{'landing.section2.item' | translate}}</li>
+  </ul>
+</section>
+
+<section class="section section_slider section_grayed d-flex flex-column align-items-center">
+  <h2 class="section__title section__title_low-margin section__title_black">{{'landing.title3' | translate}}</h2>
+  <div class="slider__wrapper">
+    <div class="slider d-flex"
+         [ngStyle]="{'left': '-' + (left*100).toString() + '%'}"
+         [ngClass]="{'slider_cycle': isLast}"
+         (swipeleft)="nextSlide()"
+         (swiperight)="prevSlide()">
+      <div class="slider__slide d-flex flex-column justify-content-center align-items-center">
+        <div class="slider__slide-wrapper">
+          <h2 class="section__title section__news section__title_black font-weight-bold m-0">АЕС та ІТФ</h2>
+          <svg class="icon icon_itf">
+            <use xlink:href="/assets/images/logo-itf.svg#logo-itf"></use>
+          </svg>
+          <div class="slider__more">{{'landing.departments.more' | translate}}</div>
+        </div>
+      </div>
+      <div class="slider__slide d-flex flex-column justify-content-center align-items-center">
+        <div class="slider__slide-wrapper">
+          <h2 class="section__title section__news section__title_black font-weight-bold m-0">АПЕПС</h2>
+          <svg class="icon icon_apeps">
+            <use xlink:href="/assets/images/logo-apeps.svg#logo-apeps"></use>
+          </svg>
+          <div class="slider__more m-auto" (click)="openDescription()">{{'landing.departments.more' | translate}}</div>
+        </div>
+      </div>
+      <div class="slider__slide d-flex flex-column justify-content-center align-items-center">
+        <div class="slider__slide-wrapper">
+          <h2 class="section__title section__news section__title_black font-weight-bold m-0">АТЕП</h2>
+          <svg class="icon icon_atep">
+            <use xlink:href="/assets/images/logo-atep.svg#logo-atep"></use>
+          </svg>
+          <div class="slider__more" (click)="openDescription()">{{'landing.departments.more' | translate}}</div>
+        </div>
+      </div>
+      <div class="slider__slide d-flex flex-column justify-content-center align-items-center">
+        <div class="slider__slide-wrapper">
+          <h2 class="section__title section__news section__title_black font-weight-bold m-0">ТЕУТ i АЕС</h2>
+          <svg class="icon icon_aes">
+            <use xlink:href="/assets/images/logo-aes.svg#logo-aes"></use>
+          </svg>
+          <div class="slider__more">{{'landing.departments.more' | translate}}</div>
+        </div>
+      </div>
+      <div class="slider__slide d-flex flex-column justify-content-center align-items-center">
+        <div class="slider__slide-wrapper">
+          <h2 class="section__title section__news section__title_black font-weight-bold m-0">ТПТ</h2>
+          <svg class="icon icon_tpt">
+            <use xlink:href="/assets/images/logo-tpt.svg#logo-tpt"></use>
+          </svg>
+          <div class="slider__more">{{'landing.departments.more' | translate}}</div>
+        </div>
+      </div>
+      <div class="slider__slide d-flex flex-column justify-content-center align-items-center">
+        <div class="slider__slide-wrapper">
+          <h2 class="section__title section__news section__title_black font-weight-bold m-0">АЕС та ІТФ</h2>
+          <svg class="icon icon_itf">
+            <use xlink:href="/assets/images/logo-itf.svg#logo-itf"></use>
+          </svg>
+          <div class="slider__more">{{'landing.departments.more' | translate}}</div>
+        </div>
+      </div>
+      <div class="slider__slide d-flex flex-column justify-content-center align-items-center">
+        <div class="slider__slide-wrapper">
+          <h2 class="section__title section__news section__title_black font-weight-bold m-0">АПЕПС</h2>
+          <svg class="icon icon_apeps">
+            <use xlink:href="/assets/images/logo-apeps.svg#logo-apeps"></use>
+          </svg>
+          <div class="slider__more" (click)="openDescription()">{{'landing.departments.more' | translate}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex icon__container">
+    <div class="rounded-circle icon__nav"
+         [ngClass]="{'icon__nav_active': left === 1 || left === 6}"
+         (click)="navigate(1)"
+    ></div>
+    <div class="rounded-circle icon__nav"
+         [ngClass]="{'icon__nav_active': left === 2}"
+         (click)="navigate(2)"
+    ></div>
+    <div class="rounded-circle icon__nav"
+         [ngClass]="{'icon__nav_active': left === 3}"
+         (click)="navigate(3)"
+    ></div>
+    <div class="rounded-circle icon__nav"
+         [ngClass]="{'icon__nav_active': left === 4}"
+         (click)="navigate(4)"
+    ></div>
+    <div class="rounded-circle icon__nav"
+         [ngClass]="{'icon__nav_active': left === 5 || left === 0}"
+         (click)="navigate(5)"
+    ></div>
+  </div>
+</section>
+
+<section class="section section_green position-relative">
+  <h2 class="section__title">{{'landing.title4' | translate}}</h2>
+  <p class="section__content">
+    {{'landing.text' | translate}}
+  </p>
+  <div class="gradient"></div>
+</section>
+

@@ -1,0 +1,15 @@
+@import '../shared/functions.scss';
+@import '../shared/variables.scss';
+
+:host {
+  width: 100%;
+
+  overflow-x: hidden;
+}
+
+.test-cont {
+  width: 200px;
+  height: 700px;
+  margin-top: rem-calc(60px);
+  background: blueviolet;
+}

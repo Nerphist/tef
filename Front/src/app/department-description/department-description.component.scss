@@ -1,0 +1,122 @@
+@import "~src/shared/variables";
+@import "~src/shared/functions";
+
+:host {
+  position: relative;
+
+  background: $modal-bg;
+
+  color: $modal-text;
+
+  padding: rem-calc(30px) rem-calc(15px);
+}
+
+.title {
+  color: $modal-text;
+
+  font-size: rem-calc(40px);
+
+  text-align: center;
+
+  margin-bottom: rem-calc(15px);
+
+  &__description {
+    color: $modal-text;
+
+    text-align: center;
+
+    font-size: rem-calc(14px);
+    font-weight: 600;
+
+    line-height: 1;
+
+    margin-bottom: rem-calc(15px);
+    margin-top: 0;
+  }
+}
+
+.list {
+  position: relative;
+
+  padding: 0 0 0 rem-calc(15px);
+  margin-bottom: rem-calc(30px);
+
+  &__title {
+    color: $modal-text;
+  }
+
+  &__item {
+    color: $modal-text;
+    list-style: none;
+
+    margin-bottom: rem-calc(10px);
+
+    &:before {
+      content: '-';
+
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+.link {
+  position: relative;
+
+  z-index: 10;
+
+  font-size: rem-calc(24px);
+
+  text-align: center;
+
+  color: $basic-black;
+}
+
+.exit {
+  position: absolute;
+
+  z-index: 10;
+
+  top: rem-calc(15px);
+  right: rem-calc(15px);
+
+  width: rem-calc(30px);
+  height: rem-calc(30px);
+
+  background: $basic-black;
+
+  &__image {
+    height: rem-calc(15px);
+    width: rem-calc(15px);
+
+    margin-left: rem-calc(2px);
+  }
+}
+
+.first {
+  width: rem-calc(21px);
+  height: rem-calc(3px);
+
+  background: white;
+}
+
+.gradient {
+  width: 100%;
+  height: rem-calc(250px);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+.scroll {
+  height: 80vh;
+}
+
+:host::ng-deep .scroll {
+  .ps__rail-y {
+    display: none;
+  }
+}

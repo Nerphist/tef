@@ -1,0 +1,85 @@
+<div class="heading d-flex align-items-center justify-content-center">
+  <h1>Розклад</h1>
+</div>
+
+<div class="wrapper">
+  <div class="options d-flex justify-content-between" *ngIf="!isScheduleChosen">
+    <div class="options__item d-flex justify-content-center align-items-center">
+      Заняття
+    </div>
+    <div class="options__item d-flex justify-content-center align-items-center">
+      Сессія
+    </div>
+    <div class="options__item d-flex justify-content-center align-items-center">
+      Викладач
+    </div>
+  </div>
+
+  <div class="options options_schedule d-flex align-items-center" *ngIf="isScheduleChosen">
+    <svg class="icon icon_apeps">
+      <use xlink:href="/assets/images/logo-apeps.svg#logo-apeps"></use>
+    </svg>
+    <span class="chosen-group">{{chosenGroup}}</span>
+    <img class="cancel ml-auto" src="/assets/images/cancel-blue.png" alt=""
+         (click)="exit()">
+  </div>
+
+  <div class="input__wrapper position-relative d-flex align-items-center overflow-hidden"
+       *ngIf="!isScheduleChosen">
+    <input placeholder="Введіть назву групи" class="input ml-auto" type="text"
+           [(ngModel)]="input">
+    <img class="search" src="/assets/images/search.svg" alt="TopFaculty">
+  </div>
+
+  <div class="group__wrapper overflow-hidden" *ngIf="!isScheduleChosen">
+    <div class="group d-flex align-items-center"
+         *ngFor="let group of groups$ | async | filter: input "
+         (click)="choseGroup(group)">
+      <svg class="icon icon_apeps">
+        <use xlink:href="/assets/images/logo-apeps.svg#logo-apeps"></use>
+      </svg>
+      <span class="group__text">{{group}}</span>
+    </div>
+  </div>
+
+  <ng-container *ngIf="isScheduleChosen">
+    <div class="group__wrapper group__wrapper_schedule position-relative overflow-hidden"
+         *ngFor="let day of (schedule$ | async)?.week1">
+      <div class="group schedule d-flex align-items-center"
+           *ngFor="let lesson of day.lessons; let i = index">
+        <div class="schedule__number"
+             [ngClass]="{'schedule__text_none': !lesson.lessonName}">
+          {{lessonNumber[i]}}
+        </div>
+        <span class="schedule__text"
+              [ngClass]="{'schedule__text_none': !lesson.lessonName}">
+        {{lesson.lessonName ? lesson.lessonName : 'Заняття немає'}}
+      </span>
+      </div>
+
+      <div class="schedule__line position-absolute overflow-hidden">
+        <div class="schedule__line-progress"></div>
+      </div>
+
+    </div>
+    <div class="group__wrapper group__wrapper_schedule position-relative overflow-hidden"
+         *ngFor="let day of (schedule$ | async)?.week2">
+      <div class="group schedule d-flex align-items-center"
+           *ngFor="let lesson of day.lessons; let i = index">
+        <div class="schedule__number"
+             [ngClass]="{'schedule__text_none': !lesson.lessonName}">
+          {{lessonNumber[i]}}
+        </div>
+        <span class="schedule__text"
+              [ngClass]="{'schedule__text_none': !lesson.lessonName}">
+        {{lesson.lessonName ? lesson.lessonName : 'Заняття немає'}}
+      </span>
+      </div>
+
+      <div class="schedule__line position-absolute overflow-hidden">
+        <div class="schedule__line-progress"></div>
+      </div>
+
+    </div>
+  </ng-container>
+</div>

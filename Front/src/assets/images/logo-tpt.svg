@@ -1,0 +1,11 @@
+<svg id="logo-tpt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
+    <g fill="none" fill-rule="nonzero">
+        <g transform="translate(27.5 31.5)">
+            <path stroke-width="3" d="M30 0c14.36 0 26 11.64 26 26S44.36 52 30 52 4 40.36 4 26 15.64 0 30 0z"/>
+            <circle cx="53.5" cy="14.5" r="4.5" fill="#0a69b7"/>
+            <circle cx="30" cy="26" r="9" fill="#0a69b7"/>
+            <circle cx="4.5" cy="18.5" r="4.5" fill="#0a69b7"/>
+        </g>
+        <path stroke-linecap="round" stroke-width="3" d="M96.5 57.5c0-21.54-17.46-39-39-39M20.852 70.839c7.367 20.24 29.747 30.676 49.987 23.309M63.23 89.999C81.18 86.834 93.163 69.719 90 51.769M57.5 12.5c-24.853 0-45 20.147-45 45M57.5 44.5c-7.18 0-13 5.82-13 13"/>
+    </g>
+</svg>
